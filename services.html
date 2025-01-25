@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link href="https://fonts.cdnfonts.com/css/perandory" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Poppins&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <script src="main.js"></script> 
+         <title>Read & Roast cafe</title>
+</head>
+
+<body> 
+
+<style>
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none; 
+} 
+html {
+ scroll-behavior: smooth;
+} 
+body{
+ background-size: auto;
+ background-image: url('damaskbg.png');
+} 
+nav {
+ display: flex;
+ justify-content: space-between;
+ padding: 2% 6%;
+} 
+.logo{
+ width: 8%;
+ margin: 0px 340px 0px -40px;
+} 
+nav {
+ display: flex;
+ justify-content: space-between;
+ padding: 2% 6%;
+} 
+
+.nav-links {
+ flex: 1;
+ text-align: right;
+} 
+.nav-links ul li { 
+ list-style: none;
+ display: inline-block;
+ padding: 20px 12px;
+} 
+
+.nav-links ul li a{
+ font-family: 'Perandory', sans-serif;
+ text-decoration: none;
+ color: #FFF;
+ font-size: 15px;
+ letter-spacing: 2px;
+} 
+
+.nav-links ul li a::after {
+ content: '';
+ width: 0%;
+ height: 2px;
+ background-color: #FFF;
+ margin: 10px auto;
+ display: block; 
+ transition: .5s;
+ font-weight: 600;
+} 
+
+.nav-links ul li a:hover::after{
+ width: 100%;
+ font-weight: 600;
+}
+header{
+ background-image: url('servicesheader.jpg');
+ background-size: cover;
+ margin: 0px auto;
+ box-shadow: 0px 0px 3px 3px #fff6f1;
+}
+.title{
+ padding: 20px 0px 35px 540px;
+ font-family: "Alex Brush", serif;
+ font-weight: 400;
+ font-style: normal;
+ color: white;
+ text-decoration: none;
+ font-size: 80px;
+ animation: slideIn 0.5s forwards 1.5s;
+}
+
+.subtitle{ 
+ padding: 50px 0px 0px 180px;
+ font-family: "Alex Brush", serif;
+ font-weight: 400;
+ font-style: normal;
+ color: white;
+ text-decoration: none;
+ font-size: 50px;
+ transition: transform 0.3s ease;
+        }
+
+        .subtitle:hover {
+            transform: scale(1.20);
+} 
+
+.textflex h2{
+ display: flex;
+ margin: -640px 230px;
+ float: right;
+ white-space: nowrap;
+} 
+
+.textflex .border{
+ display: flex;
+ margin: -530px 310px;
+ float: right;
+} 
+.border{ 
+ width: 380px;
+ padding: 0px 0px 30px 95px;
+ margin-left: 160px;
+ margin-top: 10px;
+} 
+.service-container p{
+ text-align: center;
+ margin: 0px 560px 0px 90px; 
+ font-family: "Cormorant SC", serif; 
+ font-weight: 500;
+ font-style: normal;
+ text-decoration: none;
+ color: #fff6f1;
+ font-size: 16px;
+ letter-spacing: 1px;
+ line-height: 1.6;
+ white-space: nowrap;
+ text-indent: 10px;
+} 
+
+.service-container { 
+ align: center; 
+ margin-top: -420px;
+ margin-left: 540px;
+ padding-bottom: 40px;
+} 
+.Services img{
+ border-block-start-style: solid;
+ border-block-width: 3px;
+ color: white; 
+ width: 400px;
+ height: 720px;
+ } 
+.footer{
+ box-shadow: 0px 0px 3px 3px #fff6f1;
+ margin: 0px 0px 0px 0px;
+} 
+.footer-logo img{
+ width: 18%; 
+ margin: 100px 0px 0px 50px;
+} 
+.footer-text { 
+    flex: 2; 
+    text-align: left; 
+    line-height: 1.8; 
+    font-size: 1.4rem; 
+ font-family: "Alex Brush", serif;
+ font-weight: 400;
+ font-style: normal;
+ color: white;
+ text-decoration: none;
+ margin: -210px 0px 30px 410px;
+} 
+.footer-social{
+ margin: -180px 0px 160px 840px;
+ padding: 0px 0px 0px 130px;
+ display: flex;
+} 
+.social-icons {
+display: block;
+    justify-content: flex-end; 
+ text-align: center;
+} 
+.social-icons p{
+ font-family: "Alex Brush", serif;
+ font-weight: 400;
+ font-style: normal;
+ color: white;
+ font-size: 30px;
+ text-decoration: none;
+ text-align: center;
+} 
+.social-icons img { 
+    width: 12%;
+    cursor: pointer; 
+ vertical-align: bottom;
+} 
+ 
+.social-icons img:hover { 
+    opacity: 0.8; 
+} 
+ 
+.footer-credits { 
+    margin-top: 5px; 
+    font-size: 1rem; 
+    color: #ccc; 
+    text-align: center; 
+ font-family: "Alex Brush", serif;
+} 
+
+@keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style> 
+</head> 
+<body> 
+
+<header>
+    <nav> 
+        <img src="logo.png" alt="Read & Roast Logo" class="logo"> 
+  <div class="nav-links">
+   <ul> 
+    <li><a href="index.html">Home</a></li> 
+    <li><a href="history.html">Our History</a></li> 
+    <li><a href="gallery.html">Gallery</a></li> 
+    <li><a href="menu.html">Menu</a></li> 
+    <li><a href="services.html">Services</a></li> 
+    <li><a href="contact.html">Contact</a></li> 
+    <li><a href="">&#9868;</li>
+   </ul> 
+  <div>
+    </nav> 
+ 
+ <h1 class="title">Services</h1>
+</header> 
+</body> 
+
+<section>
+ <div class="Services">
+  <img src="coffeemug.jpg"></div>
+  
+  <div class="textflex">
+   <h2 class="subtitle">What Makes Us Special</h2> 
+  
+   <img src="border.png" class="border"></div>
+   
+  <div class="service-container">
+  
+       <p>Read & Roast, located in Kota Bharu, Kelantan, offers a unique<br>combination of services centered around coffee and literature:</p>
+   <br><br><p>Custom Coffee Roasting: we specialize in small-batch, gourmet <br>coffee roasting, ensuring each cup is fresh and flavorful.<br> 
+   <br><p>Bookstore: Alongside our coffee services, we operate a bookstore, <br>providing a cozy environment for patrons to enjoy a
+   good read.</p>
+   <br><br><p>Café Environment: The establishment serves as a community hub <br> where stories unfold, work gets done, and coffee keeps flowing,<br> catering to those looking to read, work, or simply unwind.
+   These <br>combined services aim to provide a unique and inviting experience<br> for coffee enthusiasts and readers alike.</p>
+  
+</section>
+
+
+<!-- Footer Section --> 
+<div class="footer"> 
+    <div class="footer-logo"> 
+        <img src="logo.png" alt="Read & Roast Logo">
+    </div> 
+    <div class="footer-text"> 
+        <p><strong>A Good Book and a Coffee</strong></p> 
+        <p>Kota Bharu, Kelantan, Malaysia</p> 
+        <p><strong>Hours:</strong> 8:00 a.m. - 11:00 p.m. (Monday - Sunday)</p> 
+        <p><strong>Phone:</strong> 09 - 744 9490</p> 
+        <p><strong>Price per person:</strong> RM20 - RM40</p> 
+    </div> 
+    <div class="footer-social">
+        <div class="social-icons"> 
+            <a href="https://www.tiktok.com/@read_n_roastmy" target="_blank">
+                <img src="tiktok1.png" alt="TikTok">
+            </a>
+            <a href="https://www.instagram.com/read_n_roastmy" target="_blank">
+                <img src="instagram.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/ReadandRoastMY" target="_blank">
+                <img src="twt.png" alt="Twitter">
+            </a>
+        </div>
+    </div>
+    <div class="footer-credits"> 
+        &copy; 2018 Read & Roast Sdn. Bhd. All rights reserved. 
+    </div> 
+</div> 
