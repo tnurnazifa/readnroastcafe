@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.cdnfonts.com/css/perandory" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="main.js"></script> 
+    <title>Read & Roast Cafe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none; 
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-size: auto;
+            background-image: url('image5.png');
+        } 
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 2% 6%;
+        }
+
+        .logo {
+            width: 8%;
+            margin: 0px 340px 0px -40px;
+        } 
+
+        .nav-links {
+            flex: 1;
+            text-align: right;
+        } 
+
+        .nav-links ul li { 
+            list-style: none;
+            display: inline-block;
+            padding: 20px 12px;
+        } 
+
+        .nav-links ul li a {
+            font-family: 'Perandory', sans-serif;
+            text-decoration: none;
+            color: #FFF;
+            font-size: 15px;
+            letter-spacing: 2px;
+        } 
+
+        .nav-links ul li a::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background-color: #FFF;
+            margin: 10px auto;
+            display: block; 
+            transition: .5s;
+            font-weight: 600;
+        } 
+
+        .nav-links ul li a:hover::after {
+            width: 100%;
+            font-weight: 600;
+        }
+
+        header {
+            background-image: url('bgheader3.jpg');
+            background-size: cover;
+            margin: 0px auto;
+            box-shadow: 0px 0px 3px 3px #fff6f1; 
+        }
+
+        .title {
+            padding: 20px 0px 35px 450px;
+            font-family: "Alex Brush", serif;
+            font-weight: 400;
+            color: white;
+            font-size: 110px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: slideIn 0.5s forwards;
+        }
+
+        .subtitle { 
+            padding: 180px 0px 0px 180px;
+            font-family: "Alex Brush", serif;
+            font-weight: 400;
+            color: white;
+            font-size: 70px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: slideIn 0.5s forwards 0.5s; /* Delay for subtitle */
+        }
+
+        .border { 
+            width: 380px;
+            padding: 0px 0px 30px 95px;
+            margin-left: 160px;
+            margin-top: 10px;
+        } 
+
+        .history-container p {
+            text-align: center;
+            margin: 0px 560px 0px 0px; 
+            font-family: "Cormorant SC", serif; 
+            font-weight: 500;
+            color: #fff6f1;
+            font-size: 16px;
+            letter-spacing: 1px;
+            line-height: 1.6;
+            white-space: nowrap;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: slideIn 0.5s forwards 1.5s; /* Delay for certificate title */
+        } 
+    
+
+        .imageflex {
+            display: flex;
+            margin: -520px 200px;
+            float: right;
+        } 
+
+        .imageflex img {
+            height: 600px;
+            border-radius: 70px;
+            animation: zoomIn 1.5s ease-out;
+            transition: transform 0.3s ease;
+        }
+
+        .imageflex img:hover {
+            transform: scale(1.20);
+        }
+
+        .separator img { 
+            max-width: 100%;
+            max-height: auto;
+            padding: 0px 0px;
+            margin: 210px 0px 100px 0px;
+            box-shadow: 0px 0px 3px 3px #fff6f1;
+        } 
+
+        .certificate h2 {
+            padding: 80px 140px 0px 380px;
+            font-family: "Alex Brush", serif;
+            font-weight: 400;
+            color: white;
+            font-size: 70px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: slideIn 0.5s forwards 1.5s; /* Delay for certificate title */
+        } 
+
+        .certificate .border {
+            margin: 0px 450px;
+        } 
+
+        .frame {
+            margin: 0px 0px 180px 260px;
+            width: 60%;
+        } 
+
+        .footer {
+            box-shadow: 0px 0px 3px 3px #fff6f1;
+            margin: 10px 0px 0px 0px;
+            transition: box-shadow 0.30s ease-in-out;
+        } 
+
+        .footer:hover {
+            box-shadow: 0px 0px 10px 5px #543A14;
+        }
+
+        .footer-logo img {
+            width: 18%; 
+            margin: 10px 0px 0px 50px;
+        } 
+
+        .footer-text { 
+            flex: 2; 
+            text-align: left; 
+            line-height: 1.8; 
+            font-size: 1.4rem; 
+            font-family: "Alex Brush", serif;
+            font-weight: 400;
+            color: white;
+            margin: -210px 0px 30px 410px;
+        } 
+
+        .footer-social {
+            margin: -180px 0px 180px 840px;
+            padding: 0px 0px 0px 130px;
+            display: flex;
+        } 
+
+        .social-icons { 
+            display: block;
+            justify-content: flex-end; 
+            text-align: center;
+        } 
+
+        .social-icons p {
+            font-family: "Alex Brush", serif;
+            font-weight: 400;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        } 
+
+        .social-icons img { 
+            width: 4%;
+            cursor: pointer;
+            vertical-align: bottom;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        } 
+
+        .social-icons img:hover { 
+            transform: scale(1.2);
+            opacity: 0.8; 
+        } 
+
+        .footer-credits { 
+            margin-top: 5px; 
+            font-size: 1rem; 
+            color: #ccc; 
+            text-align: center; 
+            font-family: "Alex Brush", serif;
+        } 
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style> 
+</head> 
+<body> 
+
+<header>
+    <nav> 
+        <img src="logo.png" alt="Read & Roast Logo" class="logo"> 
+        <div class="nav-links">
+            <ul> 
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="history.html">Our History</a></li> 
+                <li><a href="gallery.html">Gallery</a></li> 
+                <li><a href="menu.html">Menu</a></li> 
+                <li><a href="services.html">Services</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+                <li><a href="">&#9868;</a></li>
+            </ul> 
+        </div>
+    </nav> 
+    <h1 class="title">Our History</h1>
+</header> 
+
+<section> 
+    <div> 
+        <h2 class="subtitle">Homely Book Cafe</h2>
+        <img src="border.png" class="border">
+    </div>
+  
+    <div class="history-container"> 
+        <p>Read & Roast Café began its journey in October <br>
+        2018, founded by Nur Aizattie Binti Awang and a <br>
+        team of passionate young individuals from Pahang. <br>
+        Combining a love for books and coffee, the café was <br>
+        envisioned as a cozy space for readers, thinkers, <br>
+        and coffee enthusiasts to connect and unwind. <br></p>
+        
+        <br><br>
+
+        <p>Starting with a single location, Read & Roast <br>
+        quickly gained popularity for its welcoming <br>
+        atmosphere, curated book collection, and <br>
+        artisanal coffee. By 2022, the café had expanded to <br>
+        10 branches across Peninsular Malaysia, with an <br>
+        ambitious goal of opening 3 branches nationwide by <br>
+        the end of the year. <br></p>
+        
+        <br><br>
+
+        <p>Read & Roast Café continues to thrive as a hub <br>
+        for knowledge, creativity, and community, bringing <br>
+        people together one cup and one story at a time.</p>
+    </div>
+   
+    <div class="imageflex">
+        <img src="r&r.jpg" alt="read & roast cafe">
+    </div> 
+</section> 
+ 
+<div class="separator">
+    <img src="bgheader1.jpg">
+</div> 
+ 
+<section> 
+    <div class="certificate">  
+        <h2 class="subtitle">A Fervor for Flawlessness</h2>
+        <img src="border.png" class="border">
+    </div>
+    <img src="cr.png" class="frame">
+</section>
+ 
+<!-- Footer Section --> 
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="logo.png" alt="Read & Roast Logo">
+        </div>
+        <div class="footer-text">
+            <p>A Good Book and a Coffee</p>
+            <p>Baru Kelantan, Malaysia</p>
+            <p>Hours: 8:00 a.m. to 11:00 p.m. (Mon-Sun)</p>
+            <p>Phone: 09-744 9490</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@read_n_roastmy" target="_blank"><img src="tiktok1.png" alt="TikTok"></a>
+            <a href="https://www.instagram.com/read_n_roastmy" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com/ReadandRoastMY" target="_blank"><img src="twt.png" alt="Twitter"></a>
+        </div>
+    </div>
+    <div class="footer-credits">
+        &copy; 2018 Read & Roast Sdn. Bhd. All rights reserved.
+    </div>
+</div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,280 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <link href="https://fonts.cdnfonts.com/css/perandory" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Poppins&display=swap" rel="stylesheet">
+       <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="main.js"></script> 
+          <title>Read & Roast cafe</title>
+</head> 
+
+<body> 
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    }
+
+    html {
+    scroll-behavior: smooth;
+    } 
+    body{
+    background-size: auto;
+    background-image: url('damaskbg.png');
+    } 
+    nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    } 
+    .logo{
+    width: 8%;
+    margin: 0px 340px 0px -40px;
+    } 
+    nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    } 
+
+    .nav-links {
+    flex: 1;
+    text-align: right;
+    } 
+    .nav-links ul li { 
+    list-style: none;
+    display: inline-block;
+    padding: 20px 12px;
+    } 
+
+    .nav-links ul li a{
+    font-family: 'Perandory', sans-serif;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 15px;
+    letter-spacing: 2px;
+    } 
+
+    .nav-links ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #FFF;
+    margin: 10px auto;
+    display: block; 
+    transition: .5s;
+    font-weight: 600;
+    } 
+
+    .nav-links ul li a:hover::after{
+    width: 100%;
+    font-weight: 600;
+    }
+    header{
+    background-image: url('bgheader3.jpg');
+    background-size: cover;
+    margin: 0px auto;
+    box-shadow: 0px 0px 3px 3px #fff6f1;
+    }
+    .title{
+    padding: 20px 0px 35px 510px;
+    font-family: "Alex Brush", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    font-size: 110px;
+    animation: slideIn 0.5s forwards;
+    }
+
+
+    .subtitle{ 
+    padding: 180px 0px 0px 180px;
+    font-family: "Alex Brush", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    font-size: 70px;
+    } 
+
+    .border{ 
+    width: 380px;
+    padding: 0px 0px 30px 95px;
+    margin-left: 160px;
+    margin-top: 10px;
+    } 
+    
+    .imageflex {
+    display: flex;
+    margin: -520px 200px;
+    float: right;
+    } 
+
+    .imageflex img{
+    height: 600px;
+    border-radius: 70px;
+    }
+
+    .container{
+    max-width: 100%;
+    margin: 4px auto;
+    background-color: #272725;
+    }
+
+    .container .image-container{
+    columns: 3 250px;
+    gap: 0px;
+    } 
+    .container .image-container img{
+    margin-bottom: -15px;
+    width: 100%;
+    } 
+    .footer{
+    box-shadow: 0px 0px 3px 3px #fff6f1;
+    margin: 0px 0px 0px 0px;
+    } 
+    .footer-logo img{
+    width: 18%; 
+    margin: 100px 0px 0px 50px;
+    } 
+    .footer-text { 
+        flex: 2; 
+        text-align: left; 
+        line-height: 1.8; 
+        font-size: 1.4rem; 
+    font-family: "Alex Brush", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    margin: -210px 0px 30px 410px;
+    } 
+    .footer-social{
+    margin: -180px 0px 160px 840px;
+    padding: 0px 0px 0px 130px;
+    display: flex;
+    } 
+    .social-icons { 
+    display: block;
+    justify-content: flex-end; 
+    text-align: center;
+    } 
+    .social-icons p{
+    font-family: "Alex Brush", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    } 
+    .social-icons img { 
+    width: 4%;
+    cursor: pointer; 
+    vertical-align: bottom;
+    } 
+    
+    .social-icons img:hover { 
+    opacity: 0.8; 
+    } 
+    
+    .footer-credits { 
+    margin-top: 5px; 
+    font-size: 1rem; 
+    color: #ccc; 
+    text-align: center; 
+    font-family: "Alex Brush", serif;
+    } 
+
+
+    @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style> 
+</head> 
+<body>
+    <!-- Navigation -->
+<header>
+    <nav> 
+        <img src="logo.png" alt="Read & Roast Logo" class="logo"> 
+  <div class="nav-links">
+   <ul> 
+    <li><a href="index.html">Home</a></li> 
+    <li><a href="history.html">Our History</a></li> 
+    <li><a href="gallery.html">Gallery</a></li> 
+    <li><a href="menu.html">Menu</a></li> 
+    <li><a href="services.html">Services</a></li> 
+    <li><a href="contact.html">Contact</a></li> 
+    <li><a href="">&#9868;</li>
+   </ul> 
+  <div>
+    </nav> 
+ 
+ <h1 class="title">Gallery</h1>
+</header> 
+</body>
+
+
+<div class="container">
+<div class="image-container">
+ <img src="coffeecorner.jpg" alt="coffee machine">
+ <img src="giphy.gif" alt="latte art">
+ <img src="9E.jpg" alt="pastry tier">
+ <img src="sbs.jpg" alt="coffee shop">
+ <img src="librarycat.gif" alt="library">
+ <img src="corner.jpg" alt="corner table">
+ <img src="breads.gif" alt="pastries on display">
+ <img src="teaandart.jpg" alt="cafe drinks">
+ <img src="cf.png" alt="enjoy time">
+ <img src="200.gif" alt="shelves">
+ <img src="belle.gif" alt="disney princess">
+ <img src="redvelvet.jpg" alt="cookies">
+</div>
+</div>
+ 
+
+<!-- Footer -->
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="logo.png" alt="Read & Roast Logo">
+        </div>
+        <div class="footer-text">
+            <p>A Good Book and a Coffee</p>
+            <p>Baru Kelantan, Malaysia</p>
+            <p>Hours: 8:00 a.m. to 11:00 p.m. (Mon-Sun)</p>
+            <p>Phone: 09-744 9490</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@read_n_roastmy" target="_blank"><img src="tiktok1.png" alt="TikTok"></a>
+            <a href="https://www.instagram.com/read_n_roastmy" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com/ReadandRoastMY" target="_blank"><img src="twt.png" alt="Twitter"></a>
+        </div>
+    </div>
+    <div class="footer-credits">
+        &copy; 2018 Read & Roast Sdn. Bhd. All rights reserved.
+    </div>
+</div>
+</body>
+</html>
+
