@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   <link href="https://fonts.cdnfonts.com/css/perandory" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Poppins&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <script src="main.js"></script> 
+         <title>Read & Roast cafe</title>
+</head>
+
+<body> 
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none; 
+        }
+
+        html {
+            scroll-behavior: smooth;
+             
+        }
+
+        body{
+        background-size: auto;
+        background-image: url('image5.png');
+        
+        } 
+
+nav {
+ display: flex;
+ justify-content: space-between;
+ padding: 2% 6%;
+
+}
+.logo{
+ width: 8%;
+ margin: 0px 340px 0px -40px;
+} 
+nav {
+ display: flex;
+ justify-content: space-between;
+ padding: 2% 6%;
+} 
+
+.nav-links {
+ flex: 1;
+ text-align: right;
+} 
+.nav-links ul li { 
+ list-style: none;
+ display: inline-block;
+ padding: 20px 12px;
+} 
+
+.nav-links ul li a{
+ font-family: 'Perandory', sans-serif;
+ text-decoration: none;
+ color: #FFF;
+ font-size: 15px;
+ letter-spacing: 2px;
+} 
+
+.nav-links ul li a::after {
+ content: '';
+ width: 0%;
+ height: 2px;
+ background-color: #FFF;
+ margin: 10px auto;
+ display: block; 
+ transition: .5s;
+ font-weight: 600;
+} 
+
+.nav-links ul li a:hover::after{
+ width: 100%;
+ font-weight: 600;
+}
+header{
+ background-image: url('bgheader3.jpg');
+ background-size: cover;
+ margin: 0px auto;
+ box-shadow: 0px 0px 3px 3px #fff6f1;
+}
+.title{
+ padding: 20px 0px 35px 550px;
+ font-family: "Alex Brush", serif;
+ font-weight: 400;
+ font-style: normal;
+ color: white;
+ text-decoration: none;
+ font-size: 110px;
+ transition: transform 0.3s; 
+ animation: slideIn 1s ease-in;
+} 
+@keyframes slideIn {
+    from { transform: translateY(100%); opacity: 1; }
+    to { transform: translateY(10%); opacity: 0; }
+}
+
+.title:hover {
+    transform: scale(1.05);
+} 
+.subtitle{ 
+ padding: 180px 0px 0px 180px;
+ font-family: "Alex Brush", serif;
+ font-weight: 400;
+ font-style: normal;
+ color: white;
+ text-decoration: none;
+ font-size: 70px;
+ text-decoration: none;
+} 
+
+.border{ 
+ width: 380px;
+ padding: 0px 0px 30px 95px;
+ margin-left: 150px;
+ margin-top: 10px;
+} 
+
+        .menu-section {
+            padding: 40px 10px;
+            text-align: center;
+            background: url('image5.png') no-repeat center center / cover;
+            color: white;
+        }
+
+        .menu-section h2 {
+            font-size: 4rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s; 
+}  
+.menu-section h2:hover {
+    transform: scale(1.05);
+}
+
+        .menu-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            text-align: center;
+            width: 250px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s; 
+}  
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+        .menu-item h3 {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .menu-item p {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .footer{
+ box-shadow: 0px 0px 3px 3px #fff6f1;
+ margin: 0px 0px 0px 0px;
+} 
+.footer-logo img{
+ width: 18%; 
+ margin: 100px 0px 0px 50px;
+} 
+.footer-text { 
+    flex: 2; 
+    text-align: left; 
+    line-height: 1.8; 
+    font-size: 1.4rem; 
+ font-family: "Alex Brush", serif;
+ font-weight: 400;
+ font-style: normal;
+ color: white;
+ text-decoration: none;
+ margin: -210px 0px 30px 410px;
+ text-decoration: none;
+} 
+.footer-social{
+ margin: -180px 0px 160px 840px;
+ padding: 0px 0px 0px 130px;
+ display: flex;
+} 
+.social-icons { 
+ display: block;
+    justify-content: flex-end; 
+ text-align: center;
+} 
+.social-icons p{
+ font-family: "Alex Brush", serif;
+ font-weight: 400;
+ font-style: normal;
+ color: white;
+ font-size: 30px;
+ text-decoration: none;
+ text-align: center;
+} 
+.social-icons img { 
+    width: 5%;
+    cursor: pointer; 
+ vertical-align: bottom;
+} 
+ 
+.social-icons img:hover { 
+    opacity: 0.8; 
+} 
+ 
+.footer-credits { 
+    margin-top: 5px; 
+    font-size: 1rem; 
+    color: #ccc; 
+    text-align: center; 
+ font-family: "Alex Brush", serif;
+} 
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav> 
+            <img src="logo.png" alt="Read & Roast Logo" class="logo"> 
+      <div class="nav-links">
+       <ul> 
+        <li><a href="index.html">Home</a></li> 
+        <li><a href="history.html">Our History</a></li> 
+        <li><a href="gallery.html">Gallery</a></li> 
+        <li><a href="menu.html">Menu</a></li> 
+        <li><a href="services.html">Services</a></li> 
+        <li><a href="contact.html">Contact</a></li> 
+        <li><a href="">&#9868;</li>
+       </ul> 
+      <div>
+        </nav> 
+    <h1 class="title">Menu</h1>
+</header> 
+</body>
+    <!-- Menu Sections -->
+    <section class="menu-section">
+        <h2 class="subtitle">Malaysia Cuisine</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>Nasi Goreng Kampung</h3>
+                <img src="nasi1.png" alt="Nasi Goreng Kampung">
+                <p>Price: RM8</p>
+            </div>
+            <div class="menu-item">
+                <h3>Nasi Ayam Gepuk</h3>
+                <img src="nasi2.png" alt="Nasi Ayam Gepuk">
+                <p>Price: RM18</p>
+            </div>
+            <div class="menu-item">
+                <h3>Nasi Lemak Ayam</h3>
+                <img src="nasi3.png" alt="Nasi Lemak Ayam">
+                <p>Price: RM12</p>
+            </div>
+        </div>
+    </section>
+    <img src="border.png" class="border"></div>
+    <section class="menu-section">
+        <h2 class="subtitle">Western Cuisine</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>Spaghetti Carbonara</h3>
+                <img src="western1.png" alt="Caramel Macchiato">
+                <p>Price: RM17</p>
+            </div>
+            <div class="menu-item">
+                <h3>Spaghetti Bolognese</h3>
+                <img src="western2.png" alt="Strawberry Mocha">
+                <p>Price: RM17</p>
+            </div>
+            <div class="menu-item">
+                <h3>Spaghetti Aglio Olio</h3>
+                <img src="western3.png" alt="Lemon Sparkling">
+                <p>Price: RM17</p>
+            </div>
+            <div class="menu-item">
+                <h3>Fish and Chips</h3>
+                <img src="western4.png" alt="Grape Sparkling">
+                <p>Price: RM18</p>
+            </div>
+            <div class="menu-item">
+                <h3>Lamb Chop R&R</h3>
+                <img src="western5.png" alt="Strawberry Sparkling">
+                <p>Price: RM25</p>
+            </div>
+            <div class="menu-item">
+                <h3>Chicken Grill</h3>
+                <img src="western6.jpg" alt="Berry Sparkling">
+                <p>Price: RM17</p>
+            </div>
+            </div>
+        </section>
+        <img src="border.png" class="border"></div>
+    <section class="menu-section">
+        <h2 class="subtitle">Beverages</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>Classic Americano</h3>
+                <img src="beverage1.jpg" alt="Classic Americano">
+                <p>Price: RM10</p>
+            </div>
+            <div class="menu-item">
+                <h3>Hojicha Latte</h3>
+                <img src="beverage2.jpg" alt="Hojicha Latte">
+                <p>Price: RM12</p>
+            </div>
+            <div class="menu-item">
+                <h3>Caramel Macchiato</h3>
+                <img src="beverage3.jpg" alt="Caramel Macchiato">
+                <p>Price: RM15</p>
+            </div>
+            <div class="menu-item">
+                <h3>Strawberry Mocha</h3>
+                <img src="beverage4.jpg" alt="Strawberry Mocha">
+                <p>Price: RM13</p>
+            </div>
+            <div class="menu-item">
+                <h3>Lemon Sparkling</h3>
+                <img src="beverage5.jpg" alt="Lemon Sparkling">
+                <p>Price: RM12</p>
+            </div>
+            <div class="menu-item">
+                <h3>Grape Sparkling</h3>
+                <img src="beverage6.jpg" alt="Grape Sparkling">
+                <p>Price: RM12</p>
+            </div>
+            <div class="menu-item">
+                <h3>Strawberry Sparkling</h3>
+                <img src="beverage7.jpg" alt="Strawberry Sparkling">
+                <p>Price: RM13</p>
+            </div>
+            <div class="menu-item">
+                <h3>Berry Sparkling</h3>
+                <img src="beverage8.jpg" alt="Berry Sparkling">
+                <p>Price: RM13</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2 class="subtitle">Dessert</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>Chocolate Strawberry Cake</h3>
+                <img src="dessert1.jpg" alt="Chocolate Strawberry Cake">
+                <p>Price: RM11/pcs</p>
+            </div>
+            <div class="menu-item">
+                <h3>Red Velvet Cheesecake</h3>
+                <img src="dessert2.jpg" alt="Red Velvet Cheesecake">
+                <p>Price: RM10/pcs</p>
+            </div>
+            <div class="menu-item">
+                <h3>Honey Cinnamon Rolls</h3>
+                <img src="dessert3.jpg" alt="Honey Cinnamon Rolls">
+                <p>Price: RM9/pcs</p>
+            </div>
+            <div class="menu-item">
+                <h3>Tiramisu Croissant</h3>
+                <img src="dessert4.jpg" alt="Tiramisu Croissant">
+                <p>Price: RM7/pcs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Read & Roast Logo">
+            </div>
+            <div class="footer-text">
+                <p>A Good Book and a Coffee</p>
+                <p>Baru Kelantan, Malaysia</p>
+                <p>Hours: 8:00 a.m. to 11:00 p.m. (Mon-Sun)</p>
+                <p>Phone: 09-744 9490</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.tiktok.com/@read_n_roastmy" target="_blank"><img src="tiktok1.png" alt="TikTok"></a>
+                <a href="https://www.instagram.com/read_n_roastmy" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+                <a href="https://twitter.com/ReadandRoastMY" target="_blank"><img src="twt.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-credits">
+            &copy; 2018 Read & Roast Sdn. Bhd. All rights reserved.
+        </div>
+    </div>
+</body>
+
+</html>
+
